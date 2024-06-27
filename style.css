@@ -1,0 +1,303 @@
+/* General Styles */
+
+body {
+	font-family: Tahoma, Arial, sans-serif;
+	margin-top: 0.5rem;
+	background-color: whitesmoke;
+}
+
+/* Heading Styles */
+
+h1 {
+    font-size: 4vw;
+}
+
+h2 {
+    font-size: calc(14px + 2vw);
+    text-align: center;
+}
+
+h3 {
+    font-size: calc(12px + 1vw);
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 40px;
+}
+
+h4 {
+    font-weight: normal;
+    font-size: 22px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#h4-bands-nav {
+    margin-top: 93px;
+}
+
+/* Header, Footer, Nav Styles */
+
+header p {
+    font-size: 1.75vw;
+    text-align: center;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: darkgray;
+    position: sticky;
+    z-index: 3;
+  }
+
+.sticky-navbar {
+    top: 0;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-content: center;
+    top: 0;
+    height: 2rem;
+    justify-content: space-around;
+    font-weight: bold;
+    background-color: darkgray;
+}
+
+footer {
+	background-color: darkgray;
+	padding: 1em;
+	text-align: center;
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+	z-index: 3;
+}
+
+@media (max-width: 800px) {
+    footer {
+        width: 100%;
+        padding: 0%;
+    }
+}
+
+/* Paragraph Styles */
+
+p {
+    font-size: 15px;
+}
+
+div > p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+footer > p {
+    font-size: small;
+    margin-top: 8px;
+}
+
+@media (max-width: 800px) {
+    footer > p {
+        font-size: smaller;
+        margin: 0%;
+    }
+}
+
+/* Anchor Styles */
+
+footer > a {
+    font-size: medium;
+}
+
+@media (max-width: 800px) {
+    footer > a {
+        font-size: small;
+    }
+}
+
+.nav-footer-anchor {
+    height: 2rem;
+    color: black;
+    font-size: large;
+    align-content: center;
+    text-decoration: none;
+}
+
+nav > a:hover {
+    color: white;
+    font-weight: bold;
+    background-color: darkgray;
+    text-decoration: none;
+}
+
+footer > a:hover {
+    color: white;
+    font-weight: bold;
+    background-color: darkgray;
+    text-decoration: none;
+}
+
+p a {
+    color: blue;
+    text-decoration: none;
+    font-size: inherit;
+}
+
+p > a:hover {
+    color: blue;
+    text-decoration: underline;
+    background-color: whitesmoke;
+}
+
+/* Div and Span Styles */
+
+.div-center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0%;
+    border-radius: 8px;
+}
+
+.div-33-66-split {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 60px;
+    margin-bottom: 43px;
+}
+
+@media (max-width: 800px) {
+    .div-33-66-split {
+      flex-direction: column-reverse;   
+      padding: 0px 10px;
+    }
+  }
+
+.div-one-third-left {
+    width: 25%;
+    height: auto;
+    border-radius: 8px;
+    justify-content: center;
+    align-content: start;
+    margin: 1.5rem 2.5rem 24px 0.5rem;
+    padding: 0px 32px;
+}
+
+@media (max-width: 800px) {
+    .div-one-third-left {
+      width: auto;
+    }
+}
+
+#div-quarter-left-bands {
+    display: block;
+    width: 25%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 0px 32px;
+    float: left;
+    overflow: scroll;
+    position: sticky;
+    margin-bottom: 0px;
+}
+
+.sticky-page-nav {
+    position: fixed;
+    top: 2rem;
+    width: 100%;
+  }
+
+#div-3quarters-right-bands {
+    overflow: hidden;
+    display: block;
+    margin-left: 25%;
+    height: auto;
+    border: 1px solid black;
+    padding: 0px 2rem;
+    margin-bottom: 62px;
+    height: auto;
+    overflow: scroll;
+}
+
+.div-two-thirds-right {
+    width: 75%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 800px) {
+    .div-two-thirds-right {
+      width: auto;
+    }
+}
+
+footer > span {
+    font-size: medium;
+}
+
+.div-float-right {
+    position: relative;
+    float: right;
+    width: 33.33%;
+    height: fit-content;
+    border: 1px solid black;
+    margin: 1rem;
+}
+
+.video-div {
+    width: 27%;
+    float: right;
+    margin: 10px 0px 0px 20px;
+}
+
+.p-div-left {
+    width: 70%;
+    float: left;
+}
+
+/* Img and Video Styles */
+
+.video-info {
+    text-align: center;
+    padding: 0%;
+}
+
+header img {
+    border: none;
+    width: 8%;
+    height: auto;
+    justify-self: left;
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+  }
+
+  figcaption {
+    text-align: center;
+  }
+
+.responsive-video {
+    width: 100%;
+}
+
+/* List, Hr */
+
+ul {
+    list-style-type: none;
+}
+
+.clipped-hr {
+    width: 60%;
+}
+
+.gap-below {
+    margin: 0px 0px 2rem 0px;
+}
